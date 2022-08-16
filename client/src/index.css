@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #EEEEEE;
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+  min-height: 100%;
+  position: relative;
+}
+
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+header {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0F4C75;
+  padding: 10px;
+
+}
+
+.App {
+  /* padding: 30px; */
+}
+
+select {
+  background: white;
+  outline: 0;
+  margin-left: 5px;
+  overflow: hidden;
+  border: 1px solid #6262622b;
+  border-radius: 3px;
+  height: 45px;
+  width: 11em;
+  background-color: #fff;
+  /* padding: 15px; */
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  padding-left: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  background-color: rgb(93, 166, 211);
+  color: white;
+}
+
+button:hover {
+  background-color: rgb(62, 130, 172);
+  cursor: pointer;
+}
+
+button:active {
+  background-color: rgb(93, 166, 211);
+  outline: none;
+}
+
+input[type=button] {
+  outline: none;
+}
+
+
+.HomeButton {
+  float: left;
+  border: none;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
+.HomeButton:hover {
+  text-shadow: 2px 2px 20px black;
+
+}
+
+.HomeButton:active {
+  text-shadow: 4px 4px 2px black;
+}
+
+.ItemImage {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100px;
+}
+
+.ItemName {
+  display: block;
+  padding-top: 10px;
+  text-align: center;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+}
+
+.ItemName:hover {
+  text-decoration: underline;
+}
+
+.ItemPrice {
+  margin-top: auto;
+}
+
+
+a:visited,
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ShoppingCartIcon {
+  float: right;
+  cursor: pointer;
+  max-width: 3em;
+  max-height: 3em;
+}
+
+.ShoppingCartButton:hover {
+  background-color: gray;
+}
+
+
+.ShoppingCartNumber {
+  float: right;
+  position: relative;
+  left: 50px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  color: #fff;
+  background: #000;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+
+.GridContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  size: 80%;
+  gap: 20px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.GridItem {
+
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  max-width: 16%;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #00000042;
+  padding: 5px;
+  transition: all 0.5s ease;
+
+}
+
+.GridItem:hover {
+  box-shadow: 2px 2px 20px #0000004d;
+  transition: all 0.5s ease;
+}
+
+
+.Categories {
+  border-right: 1.5px solid grey;
+  max-width: 300px;
+  /* float: left; */
+  width: 12%;
+  height: 100%;
+  background-color: #1B262C;
+  position: absolute;
+  top: 68px;
+  bottom: 0;
+  min-height: 100vh;
+
+}
+
+.paymentDiv {
+  text-align: left;
+}
+
+.paymentDiv h1,
+.CheckoutDiv h1 {
+  margin-top: 15px;
+  margin-bottom: 35px;
+  text-align: left;
+}
+
+.paymentDiv input {
+  outline: none;
+  height: 30px;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #d1d1d1;
+  font-family: 'Roboto';
+}
+
+label {
+  font-weight: bold;
+}
+
+.CategoryInput {
+  width: 100%;
+  /* height: 30px; */
+  border: none;
+  font-size: medium;
+  position: sticky;
+  text-align: left;
+  padding-left: 8px;
+  background-color: transparent;
+  color: white;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffffff0f;
+  border-bottom: 1px solid #00000047;
+  cursor: pointer;
+}
+
+.CategoryInput:hover {
+  border-left: rgb(40, 140, 255) solid 1px;
+  background-color: #3282B8;
+}
+
+.CategoryInput:active {
+  text-decoration: none;
+  border: none;
+  background-color: #CCCCCC;
+}
+
+
+.SelectSort {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.SelectSort label {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 45px;
+  padding-left: 20px;
+}
+
+.itemsContainer {
+  /* overflow-y: scroll;
+ */
+  margin-left: 12vw;
+}
+
+
+.ItemPageDiv {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+
+.ItemPageText {
+  margin-left: 43vw;
+}
+
+.ItemPageImage {
+  float: left;
+  max-width: 30vw;
+  margin-left: 10vw;
+  background-color: white;
+  padding: 5px;
+  border-radius: 15px;
+  border: 1px solid #dbdbdb;
+}
+
+.CheckoutItemText svg {
+  font-size: 30px;
+}
+
+.ItemPageName {
+  text-align: left;
+  word-wrap: break-word;
+
+}
+
+.ItemPagePrice {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.ItemPageDescription {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.ItemPageAddToCartButton {
+  margin-top: 20px;
+  float: left;
+  width: 10vw;
+  height: 5vh;
+}
+
+
+.CheckoutDiv {
+  padding-left: 25vw;
+  padding-top: 30px;
+}
+
+.CheckoutItemDiv {
+  float: left;
+  clear: left;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  padding: 1rem;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #fff;
+  /* border-radius: 15px; */
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.payoutSummary {
+  clear: both;
+  padding-top: 35px;
+
+}
+
+.CheckoutItemText {
+  padding-left: 20px;
+}
+
+.CheckoutItemImg {
+  height: auto;
+  max-width: 10vw;
+  min-width: 100px;
+}
+
+.CheckoutItemName {
+  max-width: 30vw;
+  min-width: 30vw;
+  display: inline-block;
+}
+
+.CheckoutItemName:hover {
+  text-decoration: underline;
+}
+
+.CheckoutItemPrice {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.CheckoutButton {
+  width: 10vw;
+  height: 5vh;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.test {
+  text-decoration: none;
+  /* background-color: transparent; */
+  border: none;
+  margin-left: 10px;
+  font-size: 20px;
+  background-color: white;
+  height: 30px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #c2c2c2;
+  width: 60px;
+}
+
+.text:active {
+  border: none;
+  text-decoration: none;
+}
+
+.text:visited {
+  text-decoration: none;
+  border: none;
+}
